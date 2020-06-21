@@ -155,14 +155,15 @@
             android:id="@+id/feet_seekBar"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="16dp"
             android:layout_marginBottom="13dp"
             android:maxHeight="8dp"
             android:progressDrawable="@drawable/custom_seekbar"
             android:thumb="@drawable/thumb"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/feet_editText" />
+            app:layout_constraintTop_toBottomOf="@+id/feet_editText"
+            app:layout_constraintVertical_bias="0.08" />
 
         <ImageView
             android:id="@+id/stop"
@@ -180,8 +181,8 @@
             android:id="@+id/save_pos"
             android:layout_width="83dp"
             android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
             android:layout_weight="1"
             android:background="@drawable/ripple"
             android:scaleType="centerCrop"
@@ -415,15 +416,43 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/pick_color_text"
-            app:srcCompat="@drawable/colorpicker" />
+            app:srcCompat="@drawable/hslcolorpicker" />
+
+
+        <ImageView
+            android:id="@+id/save_pos3"
+            android:layout_width="83dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="304dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple"
+            android:scaleType="centerCrop"
+            android:src="@drawable/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="13dp" />
+
+        <ImageView
+            android:id="@+id/save_pos4"
+            android:layout_width="83dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="304dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple"
+            android:scaleType="centerCrop"
+            android:src="@drawable/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <View
             android:id="@+id/test"
-            android:layout_width="160dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="32dp"
             android:background="#38C7EF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/color_picker" />
 
@@ -431,12 +460,13 @@
             android:id="@+id/save2"
             android:layout_width="158dp"
             android:layout_height="131dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="72dp"
             android:layout_weight="2"
             android:padding="16dp"
             android:scaleType="fitCenter"
             android:src="@drawable/logo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/color_picker" />
     </androidx.constraintlayout.widget.ConstraintLayout>
